@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #faf8fe;
+  --color-surface-dim: #dad9df;
+  --color-surface-bright: #faf8fe;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f4f3f8;
+  --color-surface-container: #eeedf3;
+  --color-surface-container-high: #e9e7ed;
+  --color-surface-container-highest: #e3e2e7;
+  --color-on-surface: #1a1b1f;
+  --color-on-surface-variant: #414753;
+  --color-inverse-surface: #2f3034;
+  --color-inverse-on-surface: #f1f0f5;
+  --color-outline: #717785;
+  --color-outline-variant: #c1c6d6;
+  --color-surface-tint: #005cbb;
+  --color-primary: #0059b5;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #0071e3;
+  --color-on-primary-container: #fcfbff;
+  --color-inverse-primary: #abc7ff;
+  --color-secondary: #006e28;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #6ffb85;
+  --color-on-secondary-container: #00732a;
+  --color-tertiary: #8a2ab9;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #a548d4;
+  --color-on-tertiary-container: #fffafa;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #d7e2ff;
+  --color-primary-fixed-dim: #abc7ff;
+  --color-on-primary-fixed: #001b3f;
+  --color-on-primary-fixed-variant: #00458f;
+  --color-secondary-fixed: #72fe88;
+  --color-secondary-fixed-dim: #53e16f;
+  --color-on-secondary-fixed: #002107;
+  --color-on-secondary-fixed-variant: #00531c;
+  --color-tertiary-fixed: #f6d9ff;
+  --color-tertiary-fixed-dim: #e8b3ff;
+  --color-on-tertiary-fixed: #310048;
+  --color-on-tertiary-fixed-variant: #7201a2;
+  --color-background: #faf8fe;
+  --color-on-background: #1a1b1f;
+  --color-surface-variant: #e3e2e7;
+
+  --spacing-space-xs: 0.25rem;
+  --spacing-space-sm: 0.5rem;
+  --spacing-space-md: 0.75rem;
+  --spacing-space-lg: 1.25rem;
+  --spacing-space-xl: 2rem;
+  --spacing-margin: 1rem;
+  --spacing-margin-tablet: 1.5rem;
+  --spacing-margin-desktop: 2rem;
+  --spacing-gutter: 1.25rem;
+  --spacing-gutter-desktop: 1.5rem;
+
+  --font-headline-xl: Inter, system-ui, sans-serif;
+  --font-headline-lg: Inter, system-ui, sans-serif;
+  --font-headline-md: Inter, system-ui, sans-serif;
+  --font-title-sm: Inter, system-ui, sans-serif;
+  --font-body-lg: Inter, system-ui, sans-serif;
+  --font-body-md: Inter, system-ui, sans-serif;
+  --font-body-sm: Inter, system-ui, sans-serif;
+  --font-label-md: Inter, system-ui, sans-serif;
+  --font-label-sm: Inter, system-ui, sans-serif;
+  --font-mono-metric: Inter, monospace;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11", "tnum", "zero";
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  body {
+    overscroll-behavior: none;
+  }
+}
+
+/* Material Symbols sizing helper */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Apple HIG custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(113, 119, 133, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(113, 119, 133, 0.45);
+}
+
+/* Dark mode overrides */
+.dark {
+  --color-surface: #121316;
+  --color-surface-dim: #1a1b1e;
+  --color-surface-bright: #1f2025;
+  --color-surface-container-lowest: #18191d;
+  --color-surface-container-low: #1e1f24;
+  --color-surface-container: #24252a;
+  --color-surface-container-high: #2b2d33;
+  --color-surface-container-highest: #33353d;
+  --color-on-surface: #f1f0f5;
+  --color-on-surface-variant: #c1c6d6;
+  --color-inverse-surface: #faf8fe;
+  --color-inverse-on-surface: #1a1b1f;
+  --color-outline: #8c91a0;
+  --color-outline-variant: #414753;
+  --color-background: #121316;
+  --color-on-background: #f1f0f5;
+}

@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"inverse-primary":"#abc7ff","error":"#ba1a1a","secondary-container":"#6ffb85","on-primary-container":"#fcfbff","on-primary-fixed":"#001b3f","on-secondary":"#ffffff","error-container":"#ffdad6","surface-tint":"#005cbb","on-secondary-container":"#00732a","on-surface-variant":"#414753","on-tertiary-fixed":"#310048","on-secondary-fixed-variant":"#00531c","surface-container-lowest":"#ffffff","surface-dim":"#dad9df","on-error":"#ffffff","surface-container-high":"#e9e7ed","surface":"#faf8fe","primary-fixed":"#d7e2ff","on-secondary-fixed":"#002107","primary":"#0059b5","outline-variant":"#c1c6d6","on-background":"#1a1b1f","secondary-fixed-dim":"#53e16f","inverse-on-surface":"#f1f0f5","tertiary-fixed-dim":"#e8b3ff","tertiary":"#8a2ab9","on-surface":"#1a1b1f","on-tertiary-fixed-variant":"#7201a2","background":"#faf8fe","surface-container-highest":"#e3e2e7","tertiary-container":"#a548d4","on-tertiary-container":"#fffafa","surface-container":"#eeedf3","secondary":"#006e28","outline":"#717785","on-primary":"#ffffff","surface-variant":"#e3e2e7","inverse-surface":"#2f3034","on-primary-fixed-variant":"#00458f","primary-fixed-dim":"#abc7ff","tertiary-fixed":"#f6d9ff","surface-container-low":"#f4f3f8","primary-container":"#0071e3","on-tertiary":"#ffffff","on-error-container":"#93000a","surface-bright":"#faf8fe","secondary-fixed":"#72fe88"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin-desktop":"2rem","space-md":"0.75rem","space-xs":"0.25rem","space-lg":"1.25rem","space-sm":"0.5rem","margin-tablet":"1.5rem","space-xl":"2rem","margin":"1rem","gutter-desktop":"1.5rem","gutter":"1.25rem"},"fontFamily":{"body-md":["Inter"],"body-sm":["Inter"],"headline-md":["Inter"],"headline-xl":["Inter"],"headline-lg-mobile":["Inter"],"body-lg":["Inter"],"headline-lg":["Inter"],"headline-xl-mobile":["Inter"],"title-sm":["Inter"],"mono-metric":["Inter"],"label-md":["Inter"],"label-sm":["Inter"]},"fontSize":{"body-md":["15px",{"lineHeight":"20px","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"25px","fontWeight":"600"}],"headline-xl":["34px",{"lineHeight":"41px","fontWeight":"700"}],"headline-lg-mobile":["22px",{"lineHeight":"28px","fontWeight":"600"}],"body-lg":["17px",{"lineHeight":"22px","fontWeight":"400"}],"headline-lg":["28px",{"lineHeight":"34px","fontWeight":"600"}],"headline-xl-mobile":["26px",{"lineHeight":"32px","fontWeight":"700"}],"title-sm":["17px",{"lineHeight":"22px","fontWeight":"600"}],"mono-metric":["16px",{"lineHeight":"20px","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"13px","fontWeight":"500"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low/90 backdrop-blur-2xl z-50 flex flex-col justify-between py-space-lg px-space-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-lg"><div class="px-space-md pt-space-xs flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-xl bg-primary-container flex items-center justify-center text-on-primary-container font-headline-md font-bold"><span class="material-symbols-outlined text-[20px]">local_hospital</span></div><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-tight text-on-surface font-bold">MEDINOVA</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Estación Clínica HIG</span></div></div><div class="w-2.5 h-2.5 rounded-full bg-secondary animate-pulse"></div></div><div class="mx-space-sm p-space-sm bg-surface-container-highest/60 rounded-xl flex items-center gap-space-sm"><span class="material-symbols-outlined text-secondary text-[20px]">verified_user</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface font-semibold">Seguridad MAR Activa</span><span class="font-label-sm text-label-sm text-on-surface-variant">Doble Check &amp; Pulsera QR</span></div></div><nav class="flex flex-col gap-space-xs px-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold shadow-sm"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant font-title-sm text-title-sm hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="cuadro-de-mandos-urgencias" href="#"><span class="material-symbols-outlined text-[22px]">emergency</span>Panel Urgencias</a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant font-title-sm text-title-sm hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="administracion-mar" href="#"><span class="material-symbols-outlined text-[22px]">medication</span>Registro MAR</a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant font-title-sm text-title-sm hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="kardex-express" href="#"><span class="material-symbols-outlined text-[22px]">inventory_2</span>Kárdex Express</a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant font-title-sm text-title-sm hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="pacientes-y-boxes" href="#"><span class="material-symbols-outlined text-[22px]">meeting_room</span>Boxes 01-12</a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant font-title-sm text-title-sm hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="alertas-e-interacciones" href="#"><span class="material-symbols-outlined text-[22px]">warning</span>Interacciones</a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-xl text-on-surface-variant font-title-sm text-title-sm hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="trazabilidad-y-firmas" href="#"><span class="material-symbols-outlined text-[22px]">draw</span>Firmas y Turnos</a></nav></div><div class="px-space-sm flex flex-col gap-space-sm"><div class="p-space-sm rounded-xl bg-surface-container/70 flex items-center justify-between"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-primary text-[20px]">schedule</span><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant">Turno Nocturno</span><span class="font-mono-metric text-mono-metric text-on-surface">03:42:15</span></div></div><span class="w-2 h-2 rounded-full bg-secondary"></span></div><div class="flex items-center justify-between px-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant">V 4.2 Apple HIG</span><span class="font-label-sm text-label-sm text-secondary font-semibold">Hospital Conectado</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/80 backdrop-blur-2xl z-40 shadow-[0_1px_8px_rgba(0,0,0,0.04)] flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-full shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><span class="material-symbols-outlined text-error text-[18px]">e911_emergency</span><span class="font-label-md text-label-md text-on-surface font-semibold">Servicio Urgencias</span><span class="font-label-sm text-label-sm text-on-surface-variant">| Box 01-12</span></div><div class="hidden xl:flex items-center gap-space-xs bg-surface-container-high/60 px-space-md py-space-xs rounded-full"><span class="material-symbols-outlined text-primary text-[18px]">badge</span><span class="font-label-md text-label-md text-on-surface">Enf. Jefa María Rivas</span><span class="font-label-sm text-label-sm text-on-surface-variant">(Guardia Nocturna)</span></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[20px]">search</span><input class="bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-10 pr-space-lg py-2 rounded-full w-64 md:w-80 outline-none focus:bg-surface-container-lowest transition-all" placeholder="Buscar paciente, DNI, cama o fármaco..." type="text"/></div><button class="flex items-center gap-space-xs bg-surface-container px-space-md py-2 rounded-full text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[18px] text-primary">bolt</span><span class="hidden md:inline">Kárdex Express</span></button><button aria-label="Cambiar Tema" class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">routine</span></button><button aria-label="Notificaciones Críticas" class="relative w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-error"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Sub-header / Patient Context Bar (Apple HIG Clinical Bar) -->
+<section class="bg-surface-container-lowest/90 backdrop-blur-xl shadow-sm px-space-xl py-space-md">
+<div class="max-w-7xl mx-auto flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Patient Identity & Clinical Metadata -->
+<div class="flex items-center gap-space-lg min-w-0">
+<div class="relative shrink-0">
+<img class="w-16 h-16 rounded-2xl object-cover shadow-sm bg-surface-container-high" data-alt="Close-up portrait of Carlos Eduardo Méndez, a 54-year-old male patient with gentle silver-grey hair, resting comfortably in a clean hospital emergency room setting with soft natural clinical ambient lighting, neutral clinical background, high-resolution authentic documentary style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfmsHgXKdtRz5VkxsrHz_-WaNPa4YBow8w7fyLCdq6HEGb3mps0KTatA8vLelWyYpGi2DN_JH-G4Miy9oIWMuAWxmbh7ZT5XDRyJyS0OIZ3PGgopubgyRkuCdxaXWWmiJzuYTSA1y7PX8eqP1FB5QNsWecZAu1WPiE5v5FPNM85YUfGReZvUahlDLG9Ls_zclWCEEqYHrtWXoyCjQFmnYPX4G9A-z9qACnIST5v-k"/>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-secondary text-on-secondary flex items-center justify-center text-[11px] font-bold shadow-sm" title="Paciente Identificado QR">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex flex-wrap items-center gap-space-xs">
+<h1 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight truncate">
+              Carlos Eduardo Méndez
+            </h1>
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-semibold">
+              Box 04 Urgencias
+            </span>
+<span class="bg-surface-container-high text-on-surface-variant font-mono-metric text-label-sm px-2 py-0.5 rounded-full">
+              Cama 04-A
+            </span>
+</div>
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-1 mt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="font-mono-metric font-semibold text-on-surface">CC: 1.020.485.912</span>
+<span>•</span>
+<span>54 años (12/04/1970)</span>
+<span>•</span>
+<span>Masculino</span>
+<span>•</span>
+<span class="font-semibold text-on-surface">78.4 kg</span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">stethoscope</span>
+              Tratante: <strong class="text-on-surface font-semibold">Dr. Alejandro Silva</strong> (Med. Interna)
+            </span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-2 bg-surface-container px-space-md py-2.5 rounded-xl text-on-surface font-label-md text-label-md hover:bg-surface-container-high active:scale-95 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">bolt</span>
+<span>Kárdex Express</span>
+</button>
+<button class="flex items-center gap-2 bg-error text-on-error px-space-md py-2.5 rounded-xl font-label-md text-label-md hover:bg-error/90 active:scale-95 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">report_problem</span>
+<span>Reportar RAM</span>
+</button>
+</div>
+</div>
+</section>
+<!-- High-Risk Allergy Banner (Prominent, Impossible to Ignore) -->
+<div class="max-w-7xl mx-auto w-full px-space-xl pt-space-md">
+<div class="relative overflow-hidden bg-error-container text-on-error-container rounded-2xl shadow-sm p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="absolute left-0 top-0 bottom-0 w-2 bg-error"></div>
+<div class="flex items-start md:items-center gap-space-md pl-space-xs">
+<div class="w-10 h-10 rounded-xl bg-error text-on-error flex items-center justify-center shrink-0 shadow-sm animate-pulse">
+<span class="material-symbols-outlined text-[24px]">crisis_alert</span>
+</div>
+<div class="flex flex-col">
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-headline-md text-label-md font-bold tracking-wider text-error uppercase">
+              ALERTA SEVERA: Alergia a Penicilinas y AINEs
+            </span>
+<span class="bg-error text-on-error font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">
+              Nivel 4 / Riesgo Máximo
+            </span>
+<span class="bg-surface-container-lowest/80 text-on-error-container font-label-sm text-label-sm px-2 py-0.5 rounded-full">
+              Shock Anafiláctico Previo
+            </span>
+</div>
+<p class="font-body-sm text-body-sm mt-0.5 leading-snug">
+<strong>Contraindicación absoluta:</strong> Amoxicilina, Ampicilina, Ibuprofeno, Dipirona, Ketorolaco. Prohibida administración sistemática o tópica. Riesgo inminente de Anafilaxia / Colapso respiratorio.
+          </p>
+</div>
+</div>
+<div class="flex items-center gap-2 shrink-0 self-end md:self-center">
+<button class="bg-surface-container-lowest/90 hover:bg-surface-container-lowest text-error font-label-md text-label-md px-3.5 py-1.5 rounded-lg shadow-sm transition-all flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+<span>Ver Protocolo</span>
+</button>
+</div>
+</div>
+</div>
+<!-- HIG Segmented Control Navigation -->
+<div class="max-w-7xl mx-auto w-full px-space-xl pt-space-lg">
+<div class="bg-surface-container-high/60 backdrop-blur-md p-1.5 rounded-2xl flex items-center gap-1 overflow-x-auto shadow-sm">
+<button class="px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest/50 whitespace-nowrap transition-all" type="button">
+        Resumen Clínico
+      </button>
+<button class="px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest/50 whitespace-nowrap transition-all" type="button">
+        Historia Clínica
+      </button>
+<!-- Active Apple HIG Pill -->
+<button class="px-space-md py-2 rounded-xl font-label-md text-label-md bg-primary-container text-on-primary-container font-semibold shadow-sm whitespace-nowrap flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">timeline</span>
+<span>Antecedentes Clínicos</span>
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+</button>
+<button class="px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest/50 whitespace-nowrap transition-all flex items-center gap-1.5" type="button">
+<span>Alergias</span>
+<span class="bg-error text-on-error font-mono-metric text-[10px] px-1.5 py-0.5 rounded-full font-bold">2</span>
+</button>
+<button class="px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest/50 whitespace-nowrap transition-all" type="button">
+        Medicamentos
+      </button>
+<button class="px-space-md py-2 rounded-xl font-label-md text-label-md text-on-surface-variant hover:text-on-surface hover:bg-surface-container-lowest/50 whitespace-nowrap transition-all" type="button">
+        Kárdex Control
+      </button>
+</div>
+</div>
+<!-- Main Workstation Layout: 2-Column Split (Timeline + Summary Panel) -->
+<main class="max-w-7xl mx-auto w-full px-space-xl py-space-lg">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left Column: Timeline & Interactive Filters (8 cols) -->
+<section class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- Filter Bar & Search Utility -->
+<div class="bg-surface-container-lowest/90 backdrop-blur-xl p-space-md rounded-2xl shadow-sm flex flex-col gap-space-md">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<!-- Search field -->
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-9 pr-space-md py-2 rounded-xl outline-none focus:bg-surface-container-lowest transition-all" placeholder="Buscar hito, fármaco, procedimiento o CIE-10..." type="text"/>
+</div>
+<!-- Sort switch & Count Badge -->
+<div class="flex items-center gap-space-md shrink-0">
+<div class="flex items-center gap-1.5 bg-surface-container px-2.5 py-1.5 rounded-xl font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[16px] text-primary">swap_vert</span>
+<span class="font-semibold">Más reciente primero</span>
+<span class="text-on-surface-variant">(2024 - 2018)</span>
+</div>
+<span class="bg-secondary-container/40 text-on-secondary-container font-label-sm text-label-sm px-2.5 py-1 rounded-full font-semibold">
+                7 eventos en red
+              </span>
+</div>
+</div>
+<!-- Category Chips Filter -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 text-label-sm font-label-sm">
+<button class="bg-primary text-on-primary px-3 py-1.5 rounded-lg font-semibold shrink-0 shadow-sm" type="button">
+              Todos los eventos (7)
+            </button>
+<button class="bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-3 py-1.5 rounded-lg shrink-0 transition-all" type="button">
+              Urgencias e Internaciones (2)
+            </button>
+<button class="bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-3 py-1.5 rounded-lg shrink-0 transition-all" type="button">
+              Reacciones Adversas [RAM] (2)
+            </button>
+<button class="bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-3 py-1.5 rounded-lg shrink-0 transition-all" type="button">
+              Quirúrgicos (1)
+            </button>
+<button class="bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-3 py-1.5 rounded-lg shrink-0 transition-all" type="button">
+              Patologías Crónicas (1)
+            </button>
+<button class="bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container px-3 py-1.5 rounded-lg shrink-0 transition-all" type="button">
+              Farmacológicos (1)
+            </button>
+</div>
+</div>
+<!-- Vertical Timeline Stream -->
+<div class="relative pl-6 sm:pl-8 flex flex-col gap-space-lg">
+<!-- Continuous Central HIG Spine Line -->
+<div class="absolute left-3 sm:left-4 top-4 bottom-6 w-0.5 bg-surface-container-highest"></div>
+<!-- TIMELINE ITEM 1: Active Episode (NAC Moderada) -->
+<article class="relative flex flex-col bg-surface-container-lowest/95 backdrop-blur-xl p-space-lg rounded-2xl shadow-sm transition-all hover:shadow-md">
+<!-- Node Pin -->
+<div class="absolute -left-6 sm:-left-8 top-5 w-6 h-6 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px]">emergency</span>
+</div>
+<!-- Header Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="bg-primary text-on-primary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">
+                  Episodio Activo / En Curso
+                </span>
+<span class="text-on-surface-variant font-label-md text-label-md">
+                  Hoy, 02:40 AM • Servicio de Urgencias Adultos
+                </span>
+</div>
+<span class="font-mono-metric text-label-sm text-primary font-semibold bg-primary/10 px-2.5 py-0.5 rounded-full">
+                Hace 4 horas
+              </span>
+</div>
+<!-- Title -->
+<h2 class="font-title-sm text-title-sm text-on-surface font-bold">
+              Ingreso por Neumonía Adquirida en la Comunidad (NAC moderada)
+            </h2>
+<!-- Vitals Grid Card -->
+<div class="my-space-md p-space-md rounded-xl bg-surface-container-low flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Presión Arterial</span>
+<span class="font-mono-metric text-mono-metric text-on-surface">128/82 <span class="font-label-sm text-label-sm text-on-surface-variant font-normal">mmHg</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Frec. Cardíaca</span>
+<span class="font-mono-metric text-mono-metric text-on-surface">76 <span class="font-label-sm text-label-sm text-on-surface-variant font-normal">lpm</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Saturación O2</span>
+<span class="font-mono-metric text-mono-metric text-secondary font-bold">94% <span class="font-label-sm text-label-sm text-on-surface-variant font-normal">(FiO2 amb)</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Temperatura</span>
+<span class="font-mono-metric text-mono-metric text-error font-bold">38.4°C</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Glucemia Cap.</span>
+<span class="font-mono-metric text-mono-metric text-on-surface">104 <span class="font-label-sm text-label-sm text-on-surface-variant font-normal">mg/dL</span></span>
+</div>
+</div>
+<!-- Clinical Note -->
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+              Ingreso derivado de consulta ambulatoria por disnea progresiva de 48h, tos con expectoración mucopurulenta y fiebre cuantificada. Foco crepitante basal derecho en auscultación. Tratamiento antibiótico iniciado con <strong>Ceftriaxona 2g IV</strong> tras verificación negativa de alergia cruzada y doble confirmación MAR.
+            </p>
+<!-- Footer / Attending Info -->
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-lowest text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-primary/10 text-primary flex items-center justify-center font-bold text-label-sm">S</span>
+<span>Médico Responsable: <strong class="text-on-surface font-semibold">Dr. Alejandro Silva</strong> (Reg. Méd. 48291)</span>
+</div>
+<button class="text-primary hover:underline font-label-md text-label-md flex items-center gap-1" type="button">
+<span>Ver Evolución Completa</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</article>
+<!-- TIMELINE ITEM 2: Critical Adverse Drug Event (Ketorolaco RAM) -->
+<article class="relative flex flex-col bg-surface-container-lowest/95 backdrop-blur-xl p-space-lg rounded-2xl shadow-sm transition-all hover:shadow-md">
+<!-- Node Pin with Alert Pulsing -->
+<div class="absolute -left-6 sm:-left-8 top-5 w-6 h-6 rounded-full bg-error text-on-error flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+</div>
+<!-- Header Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="bg-error text-on-error font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-bold uppercase tracking-wider">
+                  CRÍTICO: Farmacovigilancia RAM Nivel 4
+                </span>
+<span class="text-on-surface-variant font-label-md text-label-md">
+                  14 Octubre 2023, 19:15 • Urgencias Clínicas
+                </span>
+</div>
+<span class="font-mono-metric text-label-sm text-error font-semibold bg-error-container/40 px-2.5 py-0.5 rounded-full">
+                Hace 6 meses
+              </span>
+</div>
+<!-- Title -->
+<h2 class="font-title-sm text-title-sm text-error font-bold flex items-center gap-2">
+<span>Reacción Anafiláctica Grado III por Administración de Ketorolaco IV</span>
+</h2>
+<!-- Clinical Description Box -->
+<div class="my-space-md p-space-md rounded-xl bg-error-container/20 text-on-surface flex flex-col gap-space-xs">
+<p class="font-body-md text-body-md leading-relaxed">
+                Paciente presentó angioedema labial súbito, estridor laríngeo, broncoespasmo severo y caída tensional franca (<span class="font-mono-metric text-error font-bold">TA 80/50 mmHg</span>) a los 8 minutos de infusión de Ketorolaco 30mg IV prescrito por cólico nefrítico.
+              </p>
+<div class="p-space-sm rounded-lg bg-surface-container-lowest/80 mt-1 flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-error font-bold uppercase">Manejo de Emergencia Realizado:</span>
+<span class="font-body-sm text-body-sm text-on-surface">
+                  Adrenalina 0.5mg IM cara anterolateral del muslo + Hidrocortisona 200mg IV + Salbutamol inhalado con reservorio. Reversión hemodinámica completa tras 35 minutos.
+                </span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong>Desenlace:</strong> Ingreso inmediato de bloqueo estricto en sistema MAR hospitalario nacional. Se instruyó al paciente portar medalla de alerta médica.
+            </p>
+<!-- Footer / Action link -->
+<div class="mt-space-md pt-space-sm flex flex-wrap items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-error-container text-on-error-container flex items-center justify-center font-bold text-label-sm">V</span>
+<span>Tratante: <strong class="text-on-surface font-semibold">Dra. Mónica Valenzuela</strong> (Urgencióloga)</span>
+</div>
+<button class="bg-error text-on-error px-space-md py-1.5 rounded-xl font-label-md text-label-md hover:bg-error/90 transition-all flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[16px]">file_open</span>
+<span>Ver Acta RAM-2023-882</span>
+</button>
+</div>
+</article>
+<!-- TIMELINE ITEM 3: Surgical Procedure (Apendicectomía) -->
+<article class="relative flex flex-col bg-surface-container-lowest/95 backdrop-blur-xl p-space-lg rounded-2xl shadow-sm transition-all hover:shadow-md">
+<!-- Node Pin -->
+<div class="absolute -left-6 sm:-left-8 top-5 w-6 h-6 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px]">medical_services</span>
+</div>
+<!-- Header Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="bg-tertiary/15 text-tertiary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-bold">
+                  Procedimiento Quirúrgico
+                </span>
+<span class="text-on-surface-variant font-label-md text-label-md">
+                  22 Mayo 2022 • Pabellón Quirúrgico Central
+                </span>
+</div>
+<span class="font-mono-metric text-label-sm text-on-surface-variant bg-surface-container px-2.5 py-0.5 rounded-full">
+                Hace 2 años
+              </span>
+</div>
+<!-- Title -->
+<h2 class="font-title-sm text-title-sm text-on-surface font-bold">
+              Apendicectomía Laparoscópica No Complicada
+            </h2>
+<p class="font-body-md text-body-md text-on-surface mt-1 leading-relaxed">
+              Cirugía endoscópica bajo anestesia general balanceada. Sin incidencias hemodinámicas intraoperatorias. Protocolo profiláctico estricto cumplido libre de penicilinas con uso alternativo de Ciprofloxacino 400mg IV + Metronidazol 500mg IV.
+            </p>
+<div class="mt-space-md p-space-sm rounded-xl bg-surface-container-low flex items-center justify-between text-label-md font-label-md">
+<span class="text-secondary font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+                Alta médica satisfactoria al 2° día posoperatorio
+              </span>
+<span class="text-on-surface-variant font-mono-metric">Biopsia: Apendicitis flemonosa benigna</span>
+</div>
+<div class="mt-space-md flex flex-wrap items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-6 h-6 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold text-label-sm">C</span>
+<span>Cirujano Principal: <strong class="text-on-surface font-semibold">Dr. Roberto Cárdenas</strong></span>
+</div>
+<button class="text-primary hover:underline font-label-md text-label-md" type="button">
+                Ver Protocolo Operatorio
+              </button>
+</div>
+</article>
+<!-- TIMELINE ITEM 4: Chronic Diagnosis (HTA) -->
+<article class="relative flex flex-col bg-surface-container-lowest/95 backdrop-blur-xl p-space-lg rounded-2xl shadow-sm transition-all hover:shadow-md">
+<!-- Node Pin -->
+<div class="absolute -left-6 sm:-left-8 top-5 w-6 h-6 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px]">cardiology</span>
+</div>
+<!-- Header Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="bg-surface-container-highest text-on-surface font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-bold">
+                  Diagnóstico Crónico
+                </span>
+<span class="text-on-surface-variant font-label-md text-label-md">
+                  10 Noviembre 2020 • Consulta Externa Cardiología
+                </span>
+</div>
+<span class="font-mono-metric text-label-sm text-on-surface-variant bg-surface-container px-2.5 py-0.5 rounded-full">
+                Hace 4 años
+              </span>
+</div>
+<!-- Title -->
+<h2 class="font-title-sm text-title-sm text-on-surface font-bold">
+              Diagnóstico de Hipertensión Arterial Primaria (Estadio I)
+            </h2>
+<p class="font-body-md text-body-md text-on-surface mt-1 leading-relaxed">
+              Detección mediante MAPA de 24 horas con patrón non-dipper. Se indicó régimen no farmacológico y titulación de <strong>Losartán 50mg/día vía oral</strong>. Adherencia terapéutica adecuada documentada en controles sucesivos, sin repercusión de daño en órgano blanco ni nefropatía hipertensiva.
+            </p>
+<div class="mt-space-md flex flex-wrap items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span>Cardiólogo: <strong class="text-on-surface font-semibold">Dr. Ignacio Morales</strong></span>
+<span class="bg-secondary/10 text-secondary font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-semibold">
+                Control Ambulatorio Vigente
+              </span>
+</div>
+</article>
+<!-- TIMELINE ITEM 5: Historical Pediatric Reaction (Amoxicilina) -->
+<article class="relative flex flex-col bg-surface-container-lowest/95 backdrop-blur-xl p-space-lg rounded-2xl shadow-sm transition-all hover:shadow-md">
+<!-- Node Pin -->
+<div class="absolute -left-6 sm:-left-8 top-5 w-6 h-6 rounded-full bg-error-container text-on-error-container flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-[14px]">history</span>
+</div>
+<!-- Header Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-2">
+<div class="flex flex-wrap items-center gap-2">
+<span class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm px-2.5 py-0.5 rounded-full font-bold">
+                  Registro Histórico Migrado
+                </span>
+<span class="text-on-surface-variant font-label-md text-label-md">
+                  Febrero 2018 (Validado de ficha papel)
+                </span>
+</div>
+<span class="font-mono-metric text-label-sm text-on-surface-variant bg-surface-container px-2.5 py-0.5 rounded-full">
+                Hace 6 años
+              </span>
+</div>
+<!-- Title -->
+<h2 class="font-title-sm text-title-sm text-on-surface font-bold">
+              Exantema Urticariforme Generalizado por Amoxicilina
+            </h2>
+<p class="font-body-md text-body-md text-on-surface mt-1 leading-relaxed">
+              Reacción de hipersensibilidad tipo I documentada tras la 2ª dosis de Amoxicilina 500mg VO prescrita por cuadro de faringoamigdalitis purulenta. Prurito intenso palmo-plantar y placas eritematosas en tronco. Resolvió con Clorfenamina y suspensión inmediata del antibiótico.
+            </p>
+<div class="mt-space-md p-space-sm rounded-xl bg-error-container/20 flex items-center gap-2 text-label-md font-label-md text-error">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+<span>Primer antecedente confirmado de hipersensibilidad beta-lactámica en el historial del paciente.</span>
+</div>
+</article>
+</div>
+<!-- Timeline Pagination / Load More Footer -->
+<div class="flex items-center justify-center pt-space-md pb-space-lg">
+<button class="bg-surface-container px-space-lg py-2.5 rounded-xl font-label-md text-label-md text-on-surface hover:bg-surface-container-high transition-all flex items-center gap-2 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">history_edu</span>
+<span>Cargar Antecedentes Anteriores a 2018 (Ficha Pediátrica)</span>
+</button>
+</div>
+</section>
+<!-- Right Column: Permanent Clinical Summary & Fast Action Panel (4 cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Action Card: Register & Print Export -->
+<div class="bg-surface-container-lowest/90 backdrop-blur-xl p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-sm">
+<button class="w-full bg-primary text-on-primary py-3 px-space-md rounded-xl font-label-md text-label-md font-bold flex items-center justify-center gap-2 hover:bg-primary/90 active:scale-98 transition-all shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Registrar Nuevo Antecedente</span>
+</button>
+<button class="w-full bg-surface-container-low text-on-surface py-2.5 px-space-md rounded-xl font-label-md text-label-md font-semibold flex items-center justify-center gap-2 hover:bg-surface-container active:scale-98 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">print</span>
+<span>Imprimir Historial Cronológico</span>
+</button>
+</div>
+<!-- Card 1: Antecedentes Patológicos Personales -->
+<div class="bg-surface-container-lowest/90 backdrop-blur-xl p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container-high">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">person</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface font-bold">
+                Patológicos Personales
+              </h3>
+</div>
+<span class="bg-surface-container font-mono-metric text-label-sm text-on-surface-variant px-2 py-0.5 rounded-full font-semibold">
+              2 Activos
+            </span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Item 1 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-0.5">
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md font-bold text-on-surface">Hipertensión Arterial Primaria</span>
+<span class="font-label-sm text-label-sm bg-secondary-container/50 text-on-secondary-container font-semibold px-2 py-0.5 rounded-full">Controlada</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tratamiento de mantención: Losartán 50mg/24h VO.</span>
+<span class="font-label-sm text-label-sm text-outline">Dx: Noviembre 2020 • Dr. Ignacio Morales</span>
+</div>
+<!-- Item 2 -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-0.5">
+<div class="flex items-center justify-between">
+<span class="font-body-md text-body-md font-bold text-on-surface">Hernia Discal L4-L5</span>
+<span class="font-label-sm text-label-sm bg-surface-container text-on-surface font-semibold px-2 py-0.5 rounded-full">Sin déficit motor</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Episodios de lumbociatalgia izquierda tratados con kinesiología motora.</span>
+<span class="font-label-sm text-label-sm text-outline">RMN Columna: Septiembre 2021</span>
+</div>
+</div>
+</div>
+<!-- Card 2: Antecedentes Familiares de Relevancia -->
+<div class="bg-surface-container-lowest/90 backdrop-blur-xl p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container-high">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">family_restroom</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface font-bold">
+                Antecedentes Familiares
+              </h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">1er Grado</span>
+</div>
+<div class="flex flex-col gap-space-sm font-body-sm text-body-sm">
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-0.5">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-on-surface">Madre (81 años, viva)</span>
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full">DM2 + Cardiopatía</span>
+</div>
+<span class="text-on-surface-variant">Diabetes Mellitus tipo 2 insulinorrequiriente y cardiopatía isquémica revascularizada con stent.</span>
+</div>
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-0.5">
+<div class="flex items-center justify-between">
+<span class="font-semibold text-on-surface">Padre (Fallecido)</span>
+<span class="bg-surface-container text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full">ACV Isquémico</span>
+</div>
+<span class="text-on-surface-variant">Accidente cerebrovascular isquémico a los 68 años. No antecedentes oncológicos primarios.</span>
+</div>
+</div>
+</div>
+<!-- Card 3: Hábitos y Factores de Riesgo -->
+<div class="bg-surface-container-lowest/90 backdrop-blur-xl p-space-lg rounded-2xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container-high">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-secondary-container/40 text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">health_metrics</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface font-bold">
+                Hábitos y Factores
+              </h3>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Verificado</span>
+</div>
+<ul class="flex flex-col gap-2.5 font-body-sm text-body-sm">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-primary shrink-0 mt-0.5">smoking_rooms</span>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Ex-tabaquismo (Cesación hace 8 años)</span>
+<span class="text-on-surface-variant">Índice Paquetes-Año: <strong class="text-on-surface">IPA 12</strong>. Sin evidencia de EPOC en espirometría previa.</span>
+</div>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant shrink-0 mt-0.5">liquor</span>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Alcohol</span>
+<span class="text-on-surface-variant">Consumo ocasional social (&lt; 2 UBE semanales). Niega consumo de sustancias ilícitas.</span>
+</div>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-[18px] text-secondary shrink-0 mt-0.5">vaccines</span>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface">Esquema Vacunal Adulto Mayor / Riesgo</span>
+<span class="text-on-surface-variant">Influenza estacional (Abril 2023) y Neumococo polisacárida 23-valente al día.</span>
+</div>
+</li>
+</ul>
+<!-- Security Stamp HIG Apple Note -->
+<div class="p-space-sm rounded-xl bg-surface-container flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+              Auditoría Clínica HIG
+            </span>
+<span class="font-mono-metric">Revisión: 03:15 AM</span>
+</div>
+</div>
+</aside>
+</div>
+</main>
+</div></main></div></body></html>

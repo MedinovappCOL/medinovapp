@@ -1,0 +1,6 @@
+{
+  "name": "MEDINOVA - Estación Clínica MAR Urgencias",
+  "description": "Sistema de gestión segura de administración de medicamentos (MAR), Kárdex Express, historial clínico cronológico y doble verificación táctil HIG en urgencias hospitalarias.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
